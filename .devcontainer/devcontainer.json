@@ -1,21 +1,54 @@
 {
-    "name": "SQL Course Environment",
-    "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "extensions": [
-        "mtxr.sqltools",
-        "mtxr.sqltools-driver-sqlite",
-        "alexcvzz.vscode-sqlite",
-        "formulahendry.vscode-mysql"
-    ],
-    "settings": {
-        "sqltools.useNodeRuntime": true,
-        "sqltools.formatOptions": {
-            "language": "sql",
-            "keywordCase": "upper"
-        }
+  "name": "SQL Course Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "extensions": [
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-sqlite",
+    "alexcvzz.vscode-sqlite",
+    "formulahendry.vscode-mysql",
+    "cweijan.vscode-database-client2"
+  ],
+  "settings": {
+    "sqltools.useNodeRuntime": true,
+    "sqltools.formatOptions": {
+      "language": "sql",
+      "keywordCase": "upper"
     },
-    "features": {
-        "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
-    },
-    "postCreateCommand": "npm install -g sqlite3@5.1.7 && sqlite3 --version"
+    "sqltools.connections": [
+      {
+        "name": "Villes France",
+        "driver": "SQLite",
+        "database": "./departement/villes_france.db"
+      },
+      {
+        "name": "DESE Database",
+        "driver": "SQLite",
+        "database": "./dese/dese.db"
+      },
+      {
+        "name": "Moneyball",
+        "driver": "SQLite",
+        "database": "./moneyball/moneyball.db"
+      },
+      {
+        "name": "Packages",
+        "driver": "SQLite",
+        "database": "./packages/packages.db"
+      },
+      {
+        "name": "Longlist",
+        "driver": "SQLite",
+        "database": "./longlist.db"
+      },
+      {
+        "name": "Sea Lions",
+        "driver": "SQLite",
+        "database": "./sea_lions.db"
+      }
+    ]
+  },
+  "features": {
+    "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
+  },
+  "postCreateCommand": "npm install -g sqlite3@5.1.7 && sqlite3 --version"
 }
