@@ -29,6 +29,3 @@ Obtenir en une seule requête SQL la liste des villes dont la superficie est sup
 
 ## Question 10
 Obtenir la liste des départements qui possèdent plus de 2 millions d'habitants
-
-## Question 11
-Remplacez les tirets par un espace vide, pour toutes les villes commençant par "SAINT-" (dans la colonne qui contient les noms en majuscule)

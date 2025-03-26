@@ -1,0 +1,1 @@
+-- Obtenir en une seule requête SQL la liste des villes dont la superficie est supérieur à la superficie moyenne
