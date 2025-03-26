@@ -15,7 +15,7 @@
         }
     },
     "features": {
-        "sqlite3": "latest"
-    }
+        "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
+    },
+    "postCreateCommand": "sqlite3 --version"
 }
-
