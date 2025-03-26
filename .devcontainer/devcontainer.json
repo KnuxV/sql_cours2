@@ -17,5 +17,5 @@
     "features": {
         "ghcr.io/warrenbuckley/codespace-features/sqlite:1": {}
     },
-    "postCreateCommand": "sqlite3 --version"
+    "postCreateCommand": "npm install -g sqlite3@5.1.7 && sqlite3 --version"
 }
