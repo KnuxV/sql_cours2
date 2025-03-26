@@ -1,0 +1,20 @@
+{
+    "name": "SQL Course Environment",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "extensions": [
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-sqlite",
+        "alexcvzz.vscode-sqlite",
+        "formulahendry.vscode-mysql"
+    ],
+    "settings": {
+        "sqltools.useNodeRuntime": true,
+        "sqltools.formatOptions": {
+            "language": "sql",
+            "keywordCase": "upper"
+        }
+    },
+    "features": {
+        "sqlite3": "latest"
+    }
+}
